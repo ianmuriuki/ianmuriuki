@@ -23,7 +23,7 @@ Hi, I'm Iann, a passionate  Software Developer specializing in Software developm
 
 
 
-### snake
+### My github graph.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ianmuriuki/ianmuriuki/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ianmuriuki/ianmuriuki/output/github-snake.svg" />
