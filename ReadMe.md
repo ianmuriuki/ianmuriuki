@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hi, I'm Iann, a passionate  Software Developer specializing in Software development, <br>and Web3 technologies. 
+Hi, I'm MURIUKI IANN, a passionate  Software Developer specializing in Software development, <br>and Web3 technologies. 
 
 
 ## 🌐 Socials:
@@ -22,7 +22,7 @@ Hi, I'm Iann, a passionate  Software Developer specializing in Software developm
 ---
 [![](https://visitcount.itsvg.in/api?id=ianmuriuki&icon=0&color=0)](https://visitcount.itsvg.in)
 
-### My github graph.
+### Graph.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ianmuriuki/ianmuriuki/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ianmuriuki/ianmuriuki/output/github-snake.svg" />
