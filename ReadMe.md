@@ -1,6 +1,7 @@
-# 💫 About Me:
-Hi, I'm MURIUKI IANN, a passionate  Software Developer specializing in Software development, <br>and Web3 technologies. 
 
+# 💫 About Me
+
+I'm Muriuki Ian, a Software Engineer specializing in software development and Web3 technologies. I focus on building secure, scalable, and efficient systems that drive innovation and impact.
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/muriuki_iann) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ian-muriuki-2387992b9) [![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/codes_inc) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/inc_codes) 
