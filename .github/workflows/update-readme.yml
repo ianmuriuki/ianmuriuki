@@ -1,0 +1,33 @@
+on:
+  schedule:
+    - cron: "30 19 * * *" # Runs daily at 19:30 UTC
+  workflow_dispatch: # Allows manual runs
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Fetch Today's Date
+        run: echo "DATE=$(date +'%m/%d')" >> $GITHUB_ENV
+      - name: Fetch Daily Fact
+        run: |
+          FACT=$(curl -s "http://numbersapi.com/${{ env.DATE }}")
+          echo "FACT=$FACT" >> $GITHUB_ENV
+      - name: Update README
+        run: |
+          awk -v fact="**<b>📌 Daily Fact:</b>** $FACT" '
+          /^\*\*<b>📌 Daily Fact:<\/b>\*\*/ {print fact; found=1; next}
+          {print}
+          END {if (!found) print fact}
+          ' README.md > temp.md && mv temp.md README.md
+      - name: Commit and Push Changes
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git config --global user.name "your-github-username"
+          git config --global user.email "your-email@example.com"
+          git pull @github.com/your-github-username/your-repo.git">https://your-github-username:${GH_PAT}@github.com/your-github-username/your-repo.git
+          git add README.md
+          git commit -m "Updated README with today's fact" || exit 0
+          git push -f @github.com/your-github-username/your-repo.git">https://your-github-username:${GH_PAT}@github.com/your-github-username/your-repo.git
