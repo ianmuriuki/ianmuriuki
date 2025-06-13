@@ -45,8 +45,8 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          git config --global user.name "iacbot"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "ianmuriuki"
+          git config --global user.email "ianmuriuki.inc.com"
           git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
           git add README.md
           git commit -m "Update daily fact" || echo "No changes to commit"
