@@ -7,29 +7,42 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: "Checkout Repository"
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Fetch Today's Date
+      - name: "Debug: list files"
+        run: |
+          ls -la
+
+      - name: "Fetch Today's Date"
         id: date
-        run: echo "date=$(date +'%m/%d')" >> $GITHUB_OUTPUT
+        run: |
+          echo "date=$(date +'%m/%d')" >> $GITHUB_OUTPUT
 
-      - name: Fetch Daily Fact
+      - name: "Fetch Daily Fact"
         id: fact
         run: |
           FACT=$(curl -s "http://numbersapi.com/${{ steps.date.outputs.date }}")
           echo "fact=$FACT" >> $GITHUB_OUTPUT
 
-      - name: Update README
+      - name: "Update README"
         run: |
           fact_line="**<b>📌 Daily Fact:</b>** ${{ steps.fact.outputs.fact }}"
           awk -v fact="$fact_line" '
-          /^\*\*<b>📌 Daily Fact:<\/b>\*\*/ {print fact; found=1; next}
+          /^\*\*<b>📌 Daily Fact:<\/b>\*\*/ {
+            print fact
+            found=1
+            next
+          }
           {print}
-          END {if (!found) print fact}
+          END {
+            if (!found) print fact
+          }
           ' README.md > temp.md && mv temp.md README.md
 
-      - name: Commit and Push Changes
+      - name: "Commit and Push Changes"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
