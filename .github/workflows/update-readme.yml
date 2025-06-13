@@ -11,16 +11,19 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Fetch Today's Date
-        run: echo "DATE=$(date +'%m/%d')" >> $GITHUB_ENV
+        id: date
+        run: echo "date=$(date +'%m/%d')" >> $GITHUB_OUTPUT
 
       - name: Fetch Daily Fact
+        id: fact
         run: |
-          FACT=$(curl -s "http://numbersapi.com/${{ env.DATE }}")
-          echo "FACT=$FACT" >> $GITHUB_ENV
+          FACT=$(curl -s "http://numbersapi.com/${{ steps.date.outputs.date }}")
+          echo "fact=$FACT" >> $GITHUB_OUTPUT
 
       - name: Update README
         run: |
-          awk -v fact="**<b>📌 Daily Fact:</b>** ${{ env.FACT }}" '
+          fact_line="**<b>📌 Daily Fact:</b>** ${{ steps.fact.outputs.fact }}"
+          awk -v fact="$fact_line" '
           /^\*\*<b>📌 Daily Fact:<\/b>\*\*/ {print fact; found=1; next}
           {print}
           END {if (!found) print fact}
@@ -35,5 +38,5 @@ jobs:
           git remote set-url origin https://ianmuriuki:${GH_PAT}@github.com/ianmuriuki/ianmuriuki.git
           git pull origin main
           git add README.md
-          git commit -m "Updated README with today's fact" || exit 0
+          git commit -m "Updated README with today's fact" || echo "No changes to commit"
           git push origin main
