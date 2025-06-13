@@ -30,7 +30,11 @@
   <img alt="github-snake" src="https://raw.githubusercontent.com/ianmuriuki/ianmuriuki/output/github-snake.svg" />
 </picture>
 
-### Daily Fact: 
+
+###  🔍 Daily Trivia
+
+**<b>📌 Daily Fact:</b>**
+
 
 
 
