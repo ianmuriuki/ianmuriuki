@@ -31,14 +31,8 @@
 </picture>
 
 
-###  🔍 Daily Trivia
-
-**<b>📌 Daily Fact:</b>**
-
-
-
-
-
+###  Daily Trivia
+![roman-synkevych-UT8LMo-wlyk-unsplash](https://github.com/user-attachments/assets/a005a254-20c7-4354-a450-1fa2a64b3f4d)
 
 
 
