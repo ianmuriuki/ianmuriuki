@@ -1,7 +1,7 @@
 
 ### 🛸 whoami:
 Muriuki Ian — Think of me as 0xMuriuki but with human vibes.
-> Software Developer | Cybersecurity | Web2 & Web3 Builder  
+> Software Developer | Cybersecurity | Web3 Builder  
 > Secure. Scalable. Open-source at heart. 
 
 ### 🌐 Socials:
