@@ -1,7 +1,7 @@
 
 ###  whoami:
-Muriuki Ian — Think of me as 0xMuriuki but with human vibes.
-> Software Developer | Cybersecurity | Web3 Builder  
+Muriuki Ian - Think of me as 0xMuriuki but with human vibes.
+> Software Developer | Cybersecurity | Researcher 
 > Secure. Scalable. Open-source at heart. 
 
 ###  Socials:
