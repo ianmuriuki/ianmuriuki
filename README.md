@@ -31,7 +31,7 @@ Muriuki Ian - Think of me as 0xMuriuki but with human vibes.
 
 
 ###  Daily Trivia
-![roman-synkevych-UT8LMo-wlyk-unsplash](https://github.com/user-attachments/assets/a005a254-20c7-4354-a450-1fa2a64b3f4d)
+![roman-synkevych-UT8LMo-wlyk-unsplash](https://github.com/user-attachments/assets/a005a254-20c7-4354-a450-1fa2a64b3f4)
 
 
 
